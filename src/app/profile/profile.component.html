@@ -1,0 +1,40 @@
+<app-nav></app-nav>
+<div class="wrapper m250">
+  <div class="page-content">
+    <h2 class="text-center">Profile</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <ul class="nav nav-pills nav-justified w-100" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#personal">Personal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#documents">Documents</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content w-100">
+          <div id="personal" class="container tab-pane fade"><br>
+            <app-personal></app-personal>
+          </div>
+          <div id="education" class="tab-pane active"><br>
+            <app-education></app-education>
+          </div>
+          <div id="work" class="container tab-pane fade"><br>
+            <app-work></app-work>
+          </div>
+          <div id="documents" class="container tab-pane fade"><br>
+            <app-documents></app-documents>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

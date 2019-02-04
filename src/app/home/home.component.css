@@ -1,0 +1,21 @@
+[id^="add_new"]{
+  color:blue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+i[id^="delete"]{
+  font-size:18px;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  background: #e4e4e4;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: .4rem;
+}
+
+.action-icons{
+  margin-bottom:1rem;
+}

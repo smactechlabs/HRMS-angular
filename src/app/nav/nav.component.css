@@ -1,0 +1,169 @@
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #011e2c;
+  /* Blue Shade*/
+  overflow-x: hidden;
+  /* Hides the navigation when it's not open */
+  /*overflow-y: auto;*/
+  /*padding-top: 65px;  Place content 60px from the top */
+  transition: width 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  z-index: 10000 !important;
+  padding-bottom: 50px;
+  white-space: nowrap;
+}
+
+.sidenav .mobile-close {
+  display: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: red;
+  color: #fff;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  border: none;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  border-left: 3px solid transparent;
+  /* font-family: Roboto; */
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: 0s;
+  padding-left: 16px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #009f99;
+  background: rgb(236, 235, 236);
+  border-left: 3px solid #453355;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#mySidenav i {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.sidenav-logo {
+  width: 85%;
+  margin:auto;
+}
+
+.sidenav-logo img {
+  display: block;
+  width: 150px;
+  border-radius: 50%;
+  /* margin: auto; */
+}
+
+#mySidenav.open {
+  width: 220px !important;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.navbar {
+  margin-bottom: 15px !important;
+}
+
+.navbar-brand {
+  padding: 0px;
+  padding-left: 15px;
+  line-height: 65px;
+  color: #fff !important;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.custom-navbar .dropdown-menu.show {
+  left: initial;
+  right: 0;
+}
+
+.custom-navbar .dropdown-item {
+  padding: .5rem .5rem;
+}
+
+.custom-navbar .dropdown-item i {
+  margin-right: 5px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.navbar.bg-primary {
+  background: #28a374;
+  background: -webkit-linear-gradient(to right, #28a374, #019d9a);
+  background: linear-gradient(to right, #28a374, #019d9a);
+  color: #fff !important;
+}
+
+.navbar.bg-primary a.nav-link {
+  color: #fff !important;
+  font-size: 1rem;
+}
+
+/*---------------------------- top navigation styles -----------------------------*/
+/*---------------------------------------Responsive Styles--------------------------------*/
+@media screen and (max-width: 768px) {
+  .sidenav .mobile-close {
+      display: inline-block;
+  }
+
+  #mySidenav.open {
+      width: 100% !important;
+  }
+
+  .navbar-brand {
+      line-height: 50px;
+  }
+
+  .navbar-nav .open .dropdown-menu>li>a {
+      padding: 12px 20px;
+      color: #fff !important;
+  }
+
+  .profile-dropdown>a {
+      display: block !important;
+  }
+}
